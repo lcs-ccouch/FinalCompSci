@@ -9,9 +9,7 @@ import SwiftUI
 
 struct MovieItemView: View {
     var body: some View {
-        Text(Title)
-        
-        Text(Genre)
+       Text("F")
     }
 }
 
