@@ -13,7 +13,7 @@ struct SearchView: View {
     @State var foundMovies: [Movie] = []
     //MARK: Computed Properties
     var body: some View {
-        List(foundMovies, id: \.imdbID) { currentMovie in
+        List(foundMovies, id: \.id) { currentMovie in
             VStack {
                 Text(currentMovie.Title)
                     .bold()
