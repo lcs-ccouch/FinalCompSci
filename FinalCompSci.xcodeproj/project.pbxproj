@@ -15,6 +15,7 @@
 		2113656B2A3173B00095C7A2 /* FavouriteMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113656A2A3173B00095C7A2 /* FavouriteMovies.swift */; };
 		2113656D2A3179590095C7A2 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113656C2A3179590095C7A2 /* MovieModel.swift */; };
 		211365702A31821D0095C7A2 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113656F2A31821D0095C7A2 /* NetworkServices.swift */; };
+		21CC0B052A321558002E68A8 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 21CC0B042A321558002E68A8 /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2113656A2A3173B00095C7A2 /* FavouriteMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMovies.swift; sourceTree = "<group>"; };
 		2113656C2A3179590095C7A2 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		2113656F2A31821D0095C7A2 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		21CC0B042A321558002E68A8 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = FinalCompSci/Models/db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		211365472A316EFC0095C7A2 = {
 			isa = PBXGroup;
 			children = (
+				21CC0B042A321558002E68A8 /* db.sqlite */,
 				211365522A316EFC0095C7A2 /* FinalCompSci */,
 				211365512A316EFC0095C7A2 /* Products */,
 			);
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2113655B2A316EFE0095C7A2 /* Preview Assets.xcassets in Resources */,
+				21CC0B052A321558002E68A8 /* db.sqlite in Resources */,
 				211365582A316EFE0095C7A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

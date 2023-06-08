@@ -1,4 +1,3 @@
-
 //
 //  NetworkService.swift
 //  Jokes
@@ -23,7 +22,7 @@ struct NetworkService {
     static func fetch() async -> Movie? {
         
         // 1. Attempt to create a URL from the address provided
-        let endpoint = "http://www.omdbapi.com/?i=tt3896198&apikey=783b6ac4e"
+        let endpoint = "http://www.omdbapi.com/?apikey=783b6ac4&"
         guard let url = URL(string: endpoint) else {
             print("Invalid address for JSON endpoint.")
             return nil
@@ -66,4 +65,5 @@ struct NetworkService {
     }
     
 }
+
 

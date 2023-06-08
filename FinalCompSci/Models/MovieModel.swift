@@ -9,6 +9,7 @@ struct Movie: Identifiable, Codable {
     var Runtime: String
     var Genre: String
     var Language: String
+    var imdbID: String
 }
 
 let exampleMovie = Movie(
@@ -18,6 +19,10 @@ let exampleMovie = Movie(
     Released: "05 May 2017",
     Runtime: "136 mins",
     Genre: "Action",
-    Language: "English"
+    Language: "English",
+    imdbID: "imdbID"
+    
 )
+
+
 
