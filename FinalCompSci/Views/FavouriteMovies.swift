@@ -18,9 +18,11 @@ struct FavouriteMovies: View {
                 
                 
             }
-                
+            .navigationTitle("Watch Later")
             }
+       
         }
+       
     }
 
 

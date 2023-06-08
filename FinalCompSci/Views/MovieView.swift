@@ -1,47 +1,24 @@
 import SwiftUI
 
 struct MovieView: View {
-    @State var currentMovie: Movie?
     
+    @State var foundMovies: [Movie] = []
     var body: some View {
         NavigationView {
             VStack {
-                if let currentMovie = currentMovie {
-                    ScrollView {
-                        ZStack {
-                            Rectangle()
-                                .fill(Color.blue)
-                                .cornerRadius(10)
-                                .frame(width: 300, height: 250)
-                            
-                            HStack {
-                                VStack {
-                                    Text(currentMovie.Title)
-                                        .font(.title)
-                                    
-                                    Text("\(currentMovie.Year)")
-                                    
-                                    Text(currentMovie.Rated)
-                                    
-                                    Text(currentMovie.Released)
-                                    Text(currentMovie.Runtime)
-                                    Text(currentMovie.Genre)
-                                    Text(currentMovie.Language)
-                                }
-                            }
-                        }
-                    }
-                } else {
-                    ProgressView()
+                ScrollView {
+                    
                 }
+                .navigationTitle("Movie Information")
             }
-            .navigationTitle("Movie Information")
-        }
-        
+            .task {
+                foundMovies = await NetworkService.fetch()
             }
+            
         }
+    }
     
-
+}
 
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {

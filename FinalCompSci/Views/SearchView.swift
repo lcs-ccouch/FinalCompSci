@@ -13,13 +13,21 @@ struct SearchView: View {
     @State var foundMovies: [Movie] = []
     //MARK: Computed Properties
     var body: some View {
-        List(foundMovies, id: \.id) { currentMovie in
-            VStack {
-                Text(currentMovie.Title)
-                    .bold()
+        NavigationView {
+            List(foundMovies, id: \.id) { currentMovie in
+                VStack {
+                    Text(currentMovie.Title)
+                        .bold()
+                    
+                    
+                    Text(currentMovie.Genre)
+                }
                 
-                Text(currentMovie.Genre)
             }
+            .task {
+                foundMovies = await NetworkService.fetch()
+            }
+            .navigationTitle("Search")
         }
     }
 }
