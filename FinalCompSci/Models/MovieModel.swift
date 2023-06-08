@@ -1,6 +1,6 @@
 import Foundation
 
-struct Movie: Identifiable {
+struct Movie: Identifiable, Codable {
     var id = UUID()
     var Title: String
     var Year: Int

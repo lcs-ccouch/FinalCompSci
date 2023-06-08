@@ -14,6 +14,7 @@
 		211365692A3173A30095C7A2 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211365682A3173A30095C7A2 /* MovieView.swift */; };
 		2113656B2A3173B00095C7A2 /* FavouriteMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113656A2A3173B00095C7A2 /* FavouriteMovies.swift */; };
 		2113656D2A3179590095C7A2 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113656C2A3179590095C7A2 /* MovieModel.swift */; };
+		211365702A31821D0095C7A2 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113656F2A31821D0095C7A2 /* NetworkServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		211365682A3173A30095C7A2 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		2113656A2A3173B00095C7A2 /* FavouriteMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMovies.swift; sourceTree = "<group>"; };
 		2113656C2A3179590095C7A2 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		2113656F2A31821D0095C7A2 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				211365532A316EFC0095C7A2 /* FinalCompSciApp.swift */,
+				2113656E2A3182030095C7A2 /* Services */,
 				211365632A316F3D0095C7A2 /* Helper */,
 				211365612A316F130095C7A2 /* Views */,
 				211365622A316F1F0095C7A2 /* Models */,
@@ -98,6 +101,14 @@
 			children = (
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		2113656E2A3182030095C7A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2113656F2A31821D0095C7A2 /* NetworkServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211365702A31821D0095C7A2 /* NetworkServices.swift in Sources */,
 				2113656B2A3173B00095C7A2 /* FavouriteMovies.swift in Sources */,
 				211365672A3173940095C7A2 /* SearchView.swift in Sources */,
 				2113656D2A3179590095C7A2 /* MovieModel.swift in Sources */,
