@@ -1,15 +1,16 @@
 import Foundation
+import Blackbird
 
-struct Movie: Identifiable, Codable {
+struct Movie: Identifiable, Codable, BlackbirdModel {
     var id = UUID()
-    var Title: String
-    var Year: Int
-    var Rated: String
-    var Released: String
-    var Runtime: String
-    var Genre: String
-    var Language: String
-    var imdbID: String
+    @BlackbirdColumn var Title: String
+    @BlackbirdColumn var Year: Int
+    @BlackbirdColumn var Rated: String
+    @BlackbirdColumn var Released: String
+    @BlackbirdColumn var Runtime: String
+    @BlackbirdColumn var Genre: String
+    @BlackbirdColumn var Language: String
+    @BlackbirdColumn var imdbID: String
 }
 
 let exampleMovie = Movie(
@@ -23,6 +24,5 @@ let exampleMovie = Movie(
     imdbID: "imdbID"
     
 )
-
 
 
