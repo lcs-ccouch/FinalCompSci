@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		211365542A316EFC0095C7A2 /* FinalCompSciApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211365532A316EFC0095C7A2 /* FinalCompSciApp.swift */; };
-		211365562A316EFC0095C7A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211365552A316EFC0095C7A2 /* ContentView.swift */; };
 		211365582A316EFE0095C7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211365572A316EFE0095C7A2 /* Assets.xcassets */; };
 		2113655B2A316EFE0095C7A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2113655A2A316EFE0095C7A2 /* Preview Assets.xcassets */; };
+		211365672A3173940095C7A2 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211365662A3173940095C7A2 /* SearchView.swift */; };
+		211365692A3173A30095C7A2 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211365682A3173A30095C7A2 /* MovieView.swift */; };
+		2113656B2A3173B00095C7A2 /* FavouriteMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2113656A2A3173B00095C7A2 /* FavouriteMovies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		211365502A316EFC0095C7A2 /* FinalCompSci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalCompSci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211365532A316EFC0095C7A2 /* FinalCompSciApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCompSciApp.swift; sourceTree = "<group>"; };
-		211365552A316EFC0095C7A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		211365572A316EFE0095C7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2113655A2A316EFE0095C7A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		211365662A3173940095C7A2 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		211365682A3173A30095C7A2 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		2113656A2A3173B00095C7A2 /* FavouriteMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMovies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				211365532A316EFC0095C7A2 /* FinalCompSciApp.swift */,
-				211365552A316EFC0095C7A2 /* ContentView.swift */,
-				211365572A316EFE0095C7A2 /* Assets.xcassets */,
+				211365632A316F3D0095C7A2 /* Helper */,
+				211365612A316F130095C7A2 /* Views */,
+				211365622A316F1F0095C7A2 /* Models */,
 				211365592A316EFE0095C7A2 /* Preview Content */,
 			);
 			path = FinalCompSci;
@@ -62,9 +67,34 @@
 		211365592A316EFE0095C7A2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				211365572A316EFE0095C7A2 /* Assets.xcassets */,
 				2113655A2A316EFE0095C7A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		211365612A316F130095C7A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				211365662A3173940095C7A2 /* SearchView.swift */,
+				211365682A3173A30095C7A2 /* MovieView.swift */,
+				2113656A2A3173B00095C7A2 /* FavouriteMovies.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		211365622A316F1F0095C7A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		211365632A316F3D0095C7A2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211365562A316EFC0095C7A2 /* ContentView.swift in Sources */,
+				2113656B2A3173B00095C7A2 /* FavouriteMovies.swift in Sources */,
+				211365672A3173940095C7A2 /* SearchView.swift in Sources */,
+				211365692A3173A30095C7A2 /* MovieView.swift in Sources */,
 				211365542A316EFC0095C7A2 /* FinalCompSciApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
