@@ -36,4 +36,9 @@ struct Movie: Codable {
     var imdbID: String
 }
 
-
+struct SearchResult: Codable {
+   
+    let resultCount: Int
+    let results: [Movie]
+    
+}
