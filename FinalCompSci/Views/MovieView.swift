@@ -9,10 +9,42 @@ import SwiftUI
 
 struct MovieView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                ZStack {
+                    Rectangle()
+                                .fill(Color.blue)
+                                .cornerRadius(10)
+                                .frame(width: 300, height: 250)
+                    HStack {
+                        VStack {
+                            Text("Title")
+                                .font(.title)
+                            
+                        
+                            
+                            Text("Year")
+                            Text("Rated")
+                            Text("Released")
+                            Text("Runtime")
+                            Text("Genre")
+                            Text("Langauge")
+                        }
+                    }
+                }
+                
+            }
+            
+            
+            
+            .navigationTitle("Movie Information")
+            
+            
+        }
+        
     }
+    
 }
-
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {
         MovieView()
