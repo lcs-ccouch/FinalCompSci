@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
-
+import Blackbird
 @main
 struct FinalCompSciApp: App {
     var body: some Scene {
         WindowGroup {
+            FavouriteMovies()
+                .environment(\.blackbirdDatabase,AppDatabase.instance)
             NavigationView {
                 TabView {
                     SearchView()
@@ -24,8 +26,11 @@ struct FinalCompSciApp: App {
                     FavouriteMovies()
                         .tabItem {
                             Label("Favourites", systemImage: "heart.fill")
+                              
+                               
                         }
                 }
+                
             }
         }
     }
