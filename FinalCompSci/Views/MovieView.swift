@@ -1,52 +1,40 @@
-//
-//  MovieView.swift
-//  FinalCompSci
-//
-//  Created by calum couch on 2023-06-07.
-//
+
 
 import SwiftUI
 
 struct MovieView: View {
+    // MARK: stored properties
+    
+    @State var currentMovie = exampleMovie
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 ZStack {
                     Rectangle()
-                                .fill(Color.blue)
-                                .cornerRadius(10)
-                                .frame(width: 300, height: 250)
+                        .fill(Color.blue)
+                        .cornerRadius(10)
+                        .frame(width: 300, height: 250)
+                    
                     HStack {
                         VStack {
-                            Text("Title")
+                            Text(currentMovie.Title)
                                 .font(.title)
                             
-                        
+                            Text("\(currentMovie.Year)")
+                    
+                                Text("\(currentMovie.Rated)")
+                             
                             
-                            Text("Year")
-                            Text("Rated")
-                            Text("Released")
-                            Text("Runtime")
-                            Text("Genre")
-                            Text("Langauge")
+                            Text("\(currentMovie.Released)")
+                            Text("\(currentMovie.Runtime)")
+                            Text("\(currentMovie.Genre)")
+                            Text("\(currentMovie.Language)")
                         }
                     }
                 }
-                
             }
-            
-            
-            
             .navigationTitle("Movie Information")
-            
-            
         }
-        
-    }
-    
-}
-struct MovieView_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieView()
     }
 }
