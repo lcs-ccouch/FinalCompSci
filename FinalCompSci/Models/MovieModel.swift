@@ -21,7 +21,7 @@ let exampleMovie = Movie(
     Runtime: "136 mins",
     Genre: "Action",
     Language: "English",
-    imdbID: "imdbID"
+    id: "1"
     
 )
 struct Movie: Codable {
@@ -33,7 +33,7 @@ struct Movie: Codable {
     var Runtime: String
     var Genre: String
     var Language: String
-    var imdbID: String
+    var id: String
 }
 
 struct SearchResult: Codable {

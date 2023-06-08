@@ -37,11 +37,10 @@ struct MovieView: View {
             }
             .navigationTitle("Movie Information")
         }
-        .task {
-                currentMovie = await NetworkService.fetch()
+        
             }
         }
-    }
+    
 
 
 struct MovieView_Previews: PreviewProvider {
