@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct SearchView: View {
+    //MARK: Stored properties
+    // holds the list of movies returned by the search
+    @State var foundMovies: [Movie] = []
+    //MARK: Computed Properties
     var body: some View {
-      Text("hi")
+        List(foundMovies, id: \.imdbID) { currentMovie in
+            VStack {
+                Text(currentMovie.Title)
+                    .bold()
+                
+                Text(currentMovie.Genre)
+            }
+        }
     }
 }
 
