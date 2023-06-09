@@ -14,7 +14,7 @@ struct FavouriteMovies: View {
     }) var movies
     var body: some View {
         NavigationView {
-            List(movies.results) { currentMovie in
+//            List(FavouriteMovie.Title) { currentMovie in
                 
                 
             }
@@ -23,7 +23,7 @@ struct FavouriteMovies: View {
        
         }
        
-    }
+    
 
 
 struct FavouriteMovies_Previews: PreviewProvider {
