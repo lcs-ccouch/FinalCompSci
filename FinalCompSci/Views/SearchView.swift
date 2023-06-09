@@ -24,6 +24,7 @@ struct SearchView: View {
                         Text(currentMovie.Title)
                             .bold()
                             .foregroundColor(.black)
+                            
                         
                         Spacer()
                     }
@@ -31,7 +32,7 @@ struct SearchView: View {
                 
             }
             .task {
-                foundMovies = await NetworkService.fetch()
+                foundMovies = await NetworkService.fetch(resultsFor: "Guardians of the galaxy")
             }
             .navigationTitle("Search")
         }

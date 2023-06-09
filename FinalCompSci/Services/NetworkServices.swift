@@ -19,10 +19,11 @@ struct NetworkService {
     // in our app. Since this function might take a while to complete
     // this ensures that other parts of our app (like the user interface)
     // won't "freeze up" while this function does it's job.
-    static func fetch() async -> [Movie] {
+    static func fetch(resultsFor movieName: String) async -> [Movie] {
         
+        let cleanedUpMovieName = movieName.lowercased().replacingOccurrences(of: " ", with: "+")
         // 1. Attempt to create a URL from the address provided
-        let endpoint = "https://www.omdbapi.com/?s=Batman&apikey=783b6ac4"
+        let endpoint = "https://www.omdbapi.com/?s=\(cleanedUpMovieName)&apikey=783b6ac4"
         guard let url = URL(string: endpoint) else {
             print("Invalid address for JSON endpoint.")
             return []
