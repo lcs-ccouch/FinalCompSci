@@ -11,7 +11,7 @@ import SwiftUI
 struct AppDatabase {
     
     static var instance: Blackbird.Database = {
-
+        
         // Attempt to copy the database to a location within the app's sandbox where it can be modified
         do {
             // We need to manipulate files inside the app's sandbox
@@ -35,11 +35,11 @@ struct AppDatabase {
             
             // When no database currently exists at that path, copy one from the app bundle
             if !fileManager.fileExists(atPath: dbPath) {
-
+                
                 print("Database does not already exist. Instead, we are going to attempt to copy from the bundle resource path of:")
                 let dbResourcePath = Bundle.main.path(forResource: "db", ofType: "sqlite")!
                 print(dbResourcePath)
-
+                
                 try fileManager.copyItem(atPath: dbResourcePath, toPath: dbPath)
             } else {
                 print("Database already existed at that location.")
@@ -62,7 +62,7 @@ struct AppDatabase {
             // without the database, so it will not run at all.
             fatalError(error.localizedDescription)
         }
-
+        
     }()
     
 }

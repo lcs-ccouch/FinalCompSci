@@ -14,16 +14,17 @@ struct FavouriteMovies: View {
     }) var movies
     var body: some View {
         NavigationView {
-//            List(FavouriteMovie.Title) { currentMovie in
-                
-                
-            }
-            .navigationTitle("Watch Later")
-            }
-       
+            //            List(FavouriteMovie.Title) { currentMovie in
+            
+            
         }
-       
+        .navigationTitle("Watch Later")
+    }
     
+    
+}
+
+
 
 
 struct FavouriteMovies_Previews: PreviewProvider {

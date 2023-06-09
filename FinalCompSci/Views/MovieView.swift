@@ -11,13 +11,13 @@ struct MovieView: View {
                 }
                 .navigationTitle("Movie Information")
             }
-//            .task {
-//                foundMovies = await NetworkService.fetch()
-            }
-            
+            //            .task {
+            //                foundMovies = await NetworkService.fetch()
         }
+        
     }
-    
+}
+
 //}
 
 struct MovieView_Previews: PreviewProvider {

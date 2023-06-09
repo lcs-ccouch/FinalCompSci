@@ -8,7 +8,7 @@
 import Foundation
 
 struct SearchResult: Codable {
-   
+    
     let Search: [Movie]
     let totalResults: String
     let Response: String

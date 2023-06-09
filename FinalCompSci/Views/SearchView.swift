@@ -10,11 +10,11 @@ import SwiftUI
 struct SearchView: View {
     
     //MARK: Stored properties
-  
+    
     // holds the list of movies returned by the search
     @State var foundMovies: [Movie] = []
     @State var searchText = ""
- 
+    
     //MARK: Computed Properties
     var body: some View {
         NavigationView {
@@ -25,7 +25,7 @@ struct SearchView: View {
                         Text(currentMovie.Title)
                             .bold()
                             .foregroundColor(.black)
-                            
+                        
                         
                         Spacer()
                     }
@@ -37,14 +37,14 @@ struct SearchView: View {
                 Task {
                     
                     foundMovies = await NetworkService.fetch(resultsFor: newSearchText)
-            
-            }
-           
+                    
                 }
+                
             }
-            .navigationTitle("Search")
         }
+        .navigationTitle("Search")
     }
+}
 
 
 struct SearchView_Previews: PreviewProvider {

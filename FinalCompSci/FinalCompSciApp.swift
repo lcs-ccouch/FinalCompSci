@@ -12,7 +12,7 @@ struct FinalCompSciApp: App {
     var body: some Scene {
         WindowGroup {
             
-                
+            
             TabView {
                 SearchView()
                     .tabItem {
@@ -25,8 +25,8 @@ struct FinalCompSciApp: App {
                 FavouriteMovies()
                     .tabItem {
                         Label("Favourites", systemImage: "heart.fill")
-                          
-                           
+                        
+                        
                     }
             }
             .environment(\.blackbirdDatabase,AppDatabase.instance)
