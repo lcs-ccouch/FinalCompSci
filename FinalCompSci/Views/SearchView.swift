@@ -13,6 +13,7 @@ struct SearchView: View {
   
     // holds the list of movies returned by the search
     @State var foundMovies: [Movie] = []
+    @State var searchText = ""
  
     //MARK: Computed Properties
     var body: some View {
@@ -31,13 +32,20 @@ struct SearchView: View {
                 }
                 
             }
-            .task {
-                foundMovies = await NetworkService.fetch(resultsFor: "Guardians of the galaxy")
+            .searchable(text: $searchText)
+            .onChange(of: searchText) { newSearchText in
+                Task {
+                    
+                    foundMovies = await NetworkService.fetch(resultsFor: newSearchText)
+            
+            }
+           
+                }
             }
             .navigationTitle("Search")
         }
     }
-}
+
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
