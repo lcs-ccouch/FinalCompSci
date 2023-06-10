@@ -6,7 +6,7 @@ struct MovieView: View {
         NavigationView {
             VStack {
                 ScrollView {
-                   
+                    AsyncImage(url: URL(string: currentMovie.Poster))
                 }
                 .navigationTitle(currentMovie.Title)
             }
