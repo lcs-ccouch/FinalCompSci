@@ -19,14 +19,11 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             List(foundMovies, id: \.imdbID) { currentMovie in
-                
                 VStack(alignment: .leading) {
-                    HStack {
+                    NavigationLink(destination: MovieView(currentMovie: currentMovie )) {
                         Text(currentMovie.Title)
                             .bold()
                             .foregroundColor(.black)
-                        
-                        
                         Spacer()
                     }
                 }
@@ -47,8 +44,8 @@ struct SearchView: View {
 }
 
 
-struct SearchView_Previews: PreviewProvider {
+/*struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView()
     }
-}
+}*/

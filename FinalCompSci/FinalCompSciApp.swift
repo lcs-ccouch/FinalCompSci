@@ -7,29 +7,31 @@
 
 import SwiftUI
 import Blackbird
+
 @main
 struct FinalCompSciApp: App {
+    
     var body: some Scene {
         WindowGroup {
             
             
-            TabView {
+            TabView() {
+              
                 SearchView()
-                    .tabItem {
-                        Label("Search", systemImage: "magnifyingglass.circle")
-                    }
-                MovieView()
-                    .tabItem {
-                        Label("Movie", systemImage: "popcorn.circle.fill")
-                    }
+                    .tabItem { Label("Search", systemImage: "magnifyingglass.circle")}
+                
                 FavouriteMovies()
-                    .tabItem {
-                        Label("Favourites", systemImage: "heart.fill")
+                    .tabItem {Label("Favourites", systemImage: "heart.fill")
                         
-                        
-                    }
+                }
             }
             .environment(\.blackbirdDatabase,AppDatabase.instance)
         }
+    }
+}
+
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchView()
     }
 }

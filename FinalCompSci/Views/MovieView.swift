@@ -1,15 +1,14 @@
 import SwiftUI
 
 struct MovieView: View {
-    
-    @State var foundMovies: [Movie] = []
+    @State var currentMovie: Movie
     var body: some View {
         NavigationView {
             VStack {
                 ScrollView {
-                    
+                   
                 }
-                .navigationTitle("Movie Information")
+                .navigationTitle(currentMovie.Title)
             }
             //            .task {
             //                foundMovies = await NetworkService.fetch()
@@ -20,9 +19,4 @@ struct MovieView: View {
 
 //}
 
-struct MovieView_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieView()
-    }
-}
 
