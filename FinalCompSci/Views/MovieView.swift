@@ -15,7 +15,7 @@ struct MovieView: View {
                             // Write to database
                             if let currentMovie = currentMovie {
                                 try await db!.transaction { core in
-                                    try core.query("INSERT INTO Movie (Title, Year, imdbID, Poster) VALUES (?, ?, ?, ?)",
+                                    try core.query("INSERT INTO FavouriteMovie (Title, Year, imdbID, Poster) VALUES (?, ?, ?, ?)",
                                                    currentMovie.Title, currentMovie.Year, currentMovie.imdbID, currentMovie.Poster)
                                     // Record that this movie has been saved
                                     savedToDatabase = true
@@ -35,6 +35,11 @@ struct MovieView: View {
     }
 }
 
-//}
+struct MovieView_Previews: PreviewProvider {
+    static var previews: some View {
+        MovieView()
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
+    }
+}
 
 

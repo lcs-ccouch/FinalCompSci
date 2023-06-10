@@ -12,20 +12,24 @@ struct FavouriteMovies: View {
     @BlackbirdLiveModels( { db in
         try await FavouriteMovie.read(from: db)
     }) var movies
+    
     var body: some View {
         NavigationView {
-            //            List(FavouriteMovie.Title) { currentMovie in
-            
-            
-        }
-        .navigationTitle("Watch Later")
+            List(movies.results) { currentMovie in
+                VStack(alignment: .leading) {
+                    NavigationLink(destination: FavouriteMovieView(currentMovie: currentMovie )) {
+                        Text(currentMovie.Title)
+                            .bold()
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                    
+                }
+            }
+        }.navigationTitle("Favourite Movies")
     }
-    
-    
 }
-
-
-
+    
 
 struct FavouriteMovies_Previews: PreviewProvider {
     static var previews: some View {

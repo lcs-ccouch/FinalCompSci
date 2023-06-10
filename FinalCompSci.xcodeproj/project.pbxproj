@@ -20,6 +20,7 @@
 		21D4BE272A321F93002DC95F /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4BE262A321F93002DC95F /* AppDatabase.swift */; };
 		21D4BE292A32C9F4002DC95F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4BE282A32C9F4002DC95F /* SearchResult.swift */; };
 		21D4BE2C2A32D6C3002DC95F /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 21D4BE2B2A32D6C3002DC95F /* db.sqlite */; };
+		21D4BE2E2A34183D002DC95F /* FavouriteMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4BE2D2A34183D002DC95F /* FavouriteMovieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		21D4BE262A321F93002DC95F /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		21D4BE282A32C9F4002DC95F /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		21D4BE2B2A32D6C3002DC95F /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		21D4BE2D2A34183D002DC95F /* FavouriteMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				211365682A3173A30095C7A2 /* MovieView.swift */,
 				2113656A2A3173B00095C7A2 /* FavouriteMovies.swift */,
 				21D4BE212A321A60002DC95F /* MovieItemView.swift */,
+				21D4BE2D2A34183D002DC95F /* FavouriteMovieView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				21D4BE222A321A60002DC95F /* MovieItemView.swift in Sources */,
 				21D4BE272A321F93002DC95F /* AppDatabase.swift in Sources */,
 				2113656B2A3173B00095C7A2 /* FavouriteMovies.swift in Sources */,
+				21D4BE2E2A34183D002DC95F /* FavouriteMovieView.swift in Sources */,
 				211365672A3173940095C7A2 /* SearchView.swift in Sources */,
 				2113656D2A3179590095C7A2 /* Movie.swift in Sources */,
 				211365692A3173A30095C7A2 /* MovieView.swift in Sources */,
